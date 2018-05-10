@@ -1,0 +1,8 @@
+package exlcm;
+
+struct video_t
+{
+    int64_t  timestamp;
+    int16_t   stream[921600];
+  
+}
