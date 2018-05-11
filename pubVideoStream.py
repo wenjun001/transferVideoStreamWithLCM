@@ -7,6 +7,8 @@ from exlcm import video_t
 lc = lcm.LCM("udpm://239.255.76.67:7667?ttl=1")
 
 cap = cv2.VideoCapture(0)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 480)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 640)
 frency = 0
 while (True):
     ret, frame = cap.read()
