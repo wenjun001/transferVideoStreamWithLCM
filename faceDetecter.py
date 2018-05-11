@@ -48,7 +48,7 @@ def my_handler(channel, data):
 
         face_names = []
         for face_encoding in face_encodings:
-            matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
+            matches = face_recognition.compare_faces(known_face_encodings, face_encoding,tolerance=0.5)
             name = "Unknown"
             if True in matches:
                 first_match_index = matches.index(True)
