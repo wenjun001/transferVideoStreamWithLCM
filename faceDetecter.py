@@ -76,7 +76,7 @@ def my_handler(channel, data):
     if cv2.waitKey(1) & 0xFF == ord('q'): 
         return
     
-lc = lcm.LCM()
+lc = lcm.LCM("udpm://239.255.76.67:7667?ttl=1")
 subscription = lc.subscribe("VideoTopic", my_handler)
 print("start....")
 try:

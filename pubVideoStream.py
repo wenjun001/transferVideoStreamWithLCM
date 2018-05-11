@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 from exlcm import video_t
 
-lc = lcm.LCM()
+lc = lcm.LCM("udpm://239.255.76.67:7667?ttl=1")
 
 cap = cv2.VideoCapture(0)
 frency = 0
